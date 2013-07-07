@@ -1,0 +1,4 @@
+#Modules extracted from default GuppY 4.6.22
+/clock.php
+mind/mind.php
+speed/speed.php
