@@ -1,0 +1,6 @@
+#Themes extracted from default Drupal Distribution commerce_kickstart-7.x-2.0-core
+bartik
+engines
+garland
+seven
+stark
