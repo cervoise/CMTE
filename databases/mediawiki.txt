@@ -1,0 +1,8 @@
+#Modules extracted from default MediaWiki 1.19.2 and 1.20.3
+ConfirmEdit
+Gadgets
+Nuke
+ParserFunctions
+Renameuser
+Vector
+WikiEditor
