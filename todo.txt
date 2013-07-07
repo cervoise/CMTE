@@ -1,0 +1,6 @@
+Add script for analyse header
+Add HTTPS
+Add real commandline interface
+Add update function
+Add http auth
+Secure path for db
