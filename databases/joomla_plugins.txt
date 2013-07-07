@@ -1,0 +1,12 @@
+#Modules extracted from default 2.5.8fr and 3.0.2fr
+authentication
+captcha
+content
+editors
+editors-xtd
+extension
+finder
+quickicon
+search
+system
+user
