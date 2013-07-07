@@ -1,0 +1,6 @@
+#Templates extracted from default Joomla! 2.5.8fr and 3.0.2fr
+atomic
+beez5
+beez_20
+protostar
+system
