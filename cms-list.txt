@@ -1,0 +1,17 @@
+#cms_name:plugins_path
+#begin a line with a sharp for comment
+wordpress:wp-content/plugins
+wordpress_themes:wp-content/themes
+drupal:modules
+drupal_theme:themes
+joomla_plugins:plugins
+joomla_modules:modules
+joomla_themes:templates
+prestashop:modules
+prestashop_themes:themes
+typo3:typo3conf/ext
+#try on www.oblady.com
+spip1&2:extensions
+spip3:plugins-dist
+mediawiki:extensions
+guppy:plugins
