@@ -1,0 +1,25 @@
+#Modules extracted from default Joomla! 2.5.8fr and 3.0.2fr
+mod_articles_archive
+mod_articles_categories
+mod_articles_category
+mod_articles_latest
+mod_articles_news
+mod_articles_popular
+mod_banners
+mod_breadcrumbs
+mod_custom
+mod_feed
+mod_finder
+mod_footer
+mod_languages
+mod_login
+mod_menu
+mod_random_image
+mod_related_items
+mod_search
+mod_stats
+mod_syndicate
+mod_users_latest
+mod_weblinks
+mod_whosonline
+mod_wrapper
