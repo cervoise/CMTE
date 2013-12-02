@@ -19,7 +19,6 @@
 import sys
 import fileinput
 import httplib
-import cmspy
 
 __CMD__ = {
         "help": "CMS Modules & Themes Enumerator\n"
@@ -31,7 +30,7 @@ __CMD__ = {
 __DEBUG_MODE___ = False
 
 def choose_cms():
-     cms_list = []
+        cms_list = []
     	i = 0
 
     	print "\nChoose your CMS:"
