@@ -12,6 +12,6 @@ conn.request("GET", location)
 r1 = conn.getresponse()
 
 result = open('wordpress_themes_list.txt', 'a+')
-result.write('#Modules extracted from https://github.com/wpscanteam/wpscan/master/data/plugins_full.txt on ' + date + "\n")
+result.write('#Themes extracted from https://github.com/wpscanteam/wpscan/master/data/plugins_full.txt on ' + date + "\n")
 result.write(r1.read())
 result.close()
