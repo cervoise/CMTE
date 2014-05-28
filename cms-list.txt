@@ -2,8 +2,8 @@
 #begin a line with a sharp for comment
 wordpress:wp-content/plugins
 wordpress_themes:wp-content/themes
-drupal:modules
-drupal_theme:themes
+drupal:sites/all/modules/contrib
+drupal_theme:sites/all/themes
 joomla_plugins:plugins
 joomla_modules:modules
 joomla_themes:templates
