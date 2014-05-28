@@ -1,11 +1,11 @@
-#https://raw.github.com/wpscanteam/wpscan/master/data/themes_full.txt
+#https://raw.githubusercontent.com/wpscanteam/wpscan/master/data/themes_full.txt
 
 import httplib
 import time
 
 date = time.strftime('%y-%m-%d', time.localtime())
 
-url = "raw.github.com"
+domain = "raw.githubusercontent.com"
 conn = httplib.HTTPSConnection(url)
 location = "/wpscanteam/wpscan/master/data/themes_full.txt"
 conn.request("GET", location)
