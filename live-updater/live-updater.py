@@ -20,6 +20,10 @@ def get_new_db(cms):
 		return wordpressThemes.get_update()
 	elif cms == 'wordpress_plugins':
 		return wordpressPlugins.get_update()
+	elif cms == 'spip3_plugins':
+		return spip3Plugins.get_update()
+	elif cms == 'spip1and2_plugins':
+		return spip1and2Plugins.get_update()
 
 def livee_update(cms):
 	new_list = get_new_db(cms)
@@ -35,6 +39,8 @@ def update_all():
 	updatable_cms.append("typo3")
 	updatable_cms.append("wordpress_themes")
 	updatable_cms.append("wordpress_plugins")
+	updatable_cms.append("spip1and2_plugins")
+	updatable_cms.append("spip3_plugins")
 	for cms in updatable_cms:
 		live_update(cms)
 	
