@@ -1,6 +1,6 @@
 #cms_name:plugins_path
 #begin a line with a sharp for comment
-wordpress:wp-content/plugins
+wordpress_plugins:wp-content/plugins
 wordpress_themes:wp-content/themes
 drupal:sites/all/modules/contrib
 drupal_themes:sites/all/themes
