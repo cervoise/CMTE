@@ -11,7 +11,7 @@ prestashop:modules
 prestashop_themes:themes
 typo3:typo3conf/ext
 #try on www.oblady.com
-spip1&2:extensions
-spip3:plugins-dist
+spip1and2_plugins:extensions
+spip3_plugins:plugins-dist
 mediawiki:extensions
 guppy:plugins
