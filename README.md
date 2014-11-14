@@ -6,4 +6,5 @@ How to add a cms?
 ->add a file (cms_name.txt) in databases with one module/theme by line
 
 Changelog
-->version 0.1 : Only HTTP
+->version 0.2: Add HTTPS support and change update script
+->version 0.1: Only HTTP
