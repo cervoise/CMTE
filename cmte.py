@@ -22,17 +22,27 @@ import httplib
 
 __CMD__ = {
         "help": "CMS Modules & Themes Enumerator\n"
-                "Version 0.1 Antoine Cervoise\n"
+                "Version 0.2 Antoine Cervoise\n"
                 ">>> cmte.py url\n"
                 ">>> cmte.py url port"
 }
 
 __DEBUG_MODE___ = False
 
+def use_https():
+        print "\nUse HTTPS:"
+        https = -1
+    	while (https < 0 or https > 1):
+        	try:
+           		https = int(raw_input('---> '))
+        	except ValueError:
+           		print("That's not an int!")
+        return https
+
 def choose_cms():
         cms_list = []
     	i = 0
-
+           		
     	print "\nChoose your CMS:"
     
     	for elmt in fileinput.input(['cms-list.txt']):
@@ -50,7 +60,7 @@ def choose_cms():
                   		
         return cms_list[cms-1]
 
-def check_modules(url, port, modules_path, modules_list):
+def check_modules(url, port, https, modules_path, modules_list):
 	
         modules_found = []
         path =  url.partition("/")[2]
@@ -71,7 +81,10 @@ def check_modules(url, port, modules_path, modules_list):
                         sys.stdout.write("\r%d modules or themes already checked" %i)
                         sys.stdout.flush()
 		if elmt[0] != '#':
-	                conn = httplib.HTTPConnection(url.partition("/")[0], port)
+                        if https:
+        	                conn = httplib.HTTPSConnection(url.partition("/")[0], port)
+                        else :
+        	                conn = httplib.HTTPConnection(url.partition("/")[0], port)
         	        location = "/"
         	        if url.partition("/")[2] != '':
         	        	location += url.partition("/")[2] + "/"
@@ -98,6 +111,7 @@ def main():
                 if len(sys.argv) > 2:
                         port = sys.argv[2]
                 
+                https = use_https()
                 cms = choose_cms()
                 if __DEBUG_MODE___:
                         for elmt in cms:
@@ -107,7 +121,7 @@ def main():
                 for elmt in fileinput.input(['databases/'+ cms[0] + '.txt']):
                         modules_list.append(elmt.rstrip())
     
-                modules_found = check_modules(url, port, cms[1], modules_list)
+                modules_found = check_modules(url, port, https, cms[1], modules_list)
 
                 if len(modules_found) > 0:
                         print "\n" + str(len(modules_found)) + " module(s) or theme(s) found:"   
